@@ -3,23 +3,16 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    background: url(../images/bg-desktop.svg) no-repeat;
+    background: url(../images/bg-desktop.svg) no-repeat var(--medium-primary);
     background-size: cover;
-    background-color: var(--medium-primary);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-@media (max-height: 800px) {
-    body {
-        height: 100vh;
-    }
 }
 
 .header .logo {
     margin: 40px 75px 60px;
+    width: 16vw;
 }
 
 .container {
@@ -68,8 +61,8 @@ html {
 
 .footer {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: end;
+    align-items: end;
 }
 
 .footer .social {
