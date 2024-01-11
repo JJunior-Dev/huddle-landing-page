@@ -1,33 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-body {
+html {
     font-family: 'Open Sans', sans-serif;
+    background: url(../images/bg-desktop.svg) no-repeat;
+    background-size: cover;
     background-color: var(--medium-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-body .bg-desktop {
-    position: absolute;
-    z-index: -1;
+@media (max-height: 800px) {
+    body {
+        height: 100vh;
+    }
 }
 
 .header .logo {
-    margin: 54px 70px 81px;
-    width: 16%;
+    margin: 40px 75px 60px;
 }
 
 .container {
     font-family: 'Poppins', sans-serif;
     display: flex;
-    padding-left: 73px;
+    margin-left: 75px;
 }
 
 .container .mockups {
     width: 100%;
+    height: 100%;
 }
 
 .info {
-    margin: 43px 0 43px 53px;
+    margin: 43px 70px 43px 53px;
 }
 
 .info .title {
@@ -51,17 +58,22 @@ body .bg-desktop {
     border-radius: 28px;
     color: var(--medium-primary);
     box-shadow: 3px 3px 15px #392370;
+    transition: 0.5s ease-in-out;
+}
+
+.info .btn-register:hover {
+    background-color: var(--soft-primary);
+    color: #fff;
 }
 
 .footer {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    width: 107%;
+    align-items: flex-end;
 }
 
 .footer .social {
-    margin: 22px 83px;
+    margin: 20px 80px 30px;
     font-size: 18px;
     
 }
@@ -73,11 +85,18 @@ body .bg-desktop {
     padding: 10px;
     width: 40px;
     text-align: center;
+    transition: 0.3s ease-in-out;
 }
 
 .footer .social a:nth-child(2) {
     margin: 0 11px;
 }
 
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
+.footer .social a i:hover{
+    color: var(--soft-primary);
+    border: var(--soft-primary) solid 1px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: #ffffff8f; transition: 0.5s ease-in-out; }
+.attribution a:hover { color: var(--soft-primary); }
