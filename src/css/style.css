@@ -71,7 +71,11 @@ html {
     
 }
 
-.footer .social a i {
+.footer .social ul {
+    display: flex;
+}
+
+.footer .social ul li a i {
     color: #fff;
     border: #fff solid 1px;
     border-radius: 50px;
@@ -81,11 +85,11 @@ html {
     transition: 0.3s ease-in-out;
 }
 
-.footer .social a:nth-child(2) {
-    margin: 0 11px;
+.footer .social ul li:nth-child(2) {
+    margin: 0 15px;
 }
 
-.footer .social a i:hover{
+.footer .social ul li a i:hover{
     color: var(--soft-primary);
     border: var(--soft-primary) solid 1px;
 }
